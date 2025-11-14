@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[rgb(244,227,229)]">
+    <!-- Component -->
+    <div
+      class="relative h-[350px] max-w-sm mx-auto my-20 bg-white rounded-2xl shadow-md"
+    >
+      <div
+        class="absolute bg-gray-900 text-white w-[90%] left-5 -top-5 h-20 rounded-xl"
+      >
+        <h1 class="text-3xl flex justify-center items-center h-full">
+          Sign In
+        </h1>
+      </div>
+
+      <form class="absolute left-5 top-20 flex flex-col gap-5">
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-[340px] border border-gray-300 rounded-md px-4 py-2"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-[340px] border border-gray-300 rounded-md px-4 py-2"
+        />
+        <div class="flex gap-2">
+          <input type="checkbox" class="scale-125 accent-gray-900"/>
+          <p class="">Remember Me</p>
+        </div>
+
+        <button class="bg-gray-900 text-white uppercase text-sm p-2 rounded-lg font-bold hover:shadow-lg">sign in</button>
+
+        <p class="text-center text-gray-500 text-sm">Don't have an account? <span class="font-bold text-gray-900">Sign up</span> </p>
+      </form>
+    </div>
+  </body>
+</html>

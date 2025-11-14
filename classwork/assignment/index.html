@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task list</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  
+  <body>
+    <!-- Header Section -->
+    <div id="container">
+      <header>
+        <div id="header">
+          <div class="tasks">
+            <h1>Tasks list</h1>
+            <p>Hello, here are your latest tasks</p>
+          </div>
+
+          <div>
+            <button class="btn-1">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              Urgent
+            </button>
+            <button class="btn-2">
+              <i class="fa fa-th-list" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- contents -->
+      <div id="contents"> 
+        <ul>
+          <div class="del-li">
+            <div class="del-li-left">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <li style="text-decoration: line-through">YT Into remix</li>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </div>
+          <hr />
+
+          <div class="del-li">
+            <div class="del-li-left">
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <li style="text-decoration: line-through">Do the homework</li>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </div>
+          <hr />
+
+          <div class="del-li magic">
+            <div class="del-li-left">
+              <i class="fa fa-check circular" aria-hidden="true"></i>
+              <li>Magic stuff</li>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </div>
+          <hr />
+
+          <div class="del-li magic selected">
+            <div class="del-li-left">
+              <i class="fa fa-check circular" aria-hidden="true"></i>
+              <li>Magic stuff 2.0</li>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </div>
+          <hr />
+
+          <div class="del-li magic">
+            <div class="del-li-left">
+              <i class="fa fa-check circular" aria-hidden="true"></i>
+              <li>Magic stuff</li>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </div>
+          <hr />
+        </ul>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <p>Latest updated 12 minutes ago</p>
+      </div>
+    </div>
+    
+  </body>
+</html>

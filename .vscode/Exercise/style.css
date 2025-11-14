@@ -1,0 +1,19 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transition: transform 0.4s ease;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box:hover {
+   animation: rotatebox 2s linear infinite;
+    /* transform: scale(1.5); */
+    /* transform: translate(50px, 50px); */
+}
+
+@keyframes rotatebox {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+} 
