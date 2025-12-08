@@ -12,10 +12,10 @@
         background-color: rgb(192, 192, 218);
        align-content: center;
       }
-      form {
+      /* form {
         align-content: center;
         text-align: center;
-      }
+      } */
       .name {
         height: 200px;
         width: 200px;

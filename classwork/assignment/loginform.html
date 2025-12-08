@@ -7,37 +7,57 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[rgb(244,227,229)]">
-    <!-- Component -->
-    <div
-      class="relative h-[350px] max-w-sm mx-auto my-20 bg-white rounded-2xl shadow-md"
+    
+    <div 
+      class="relative h-[400px] max-w-sm mx-auto my-20 bg-white rounded-2xl shadow-md"
     >
       <div
         class="absolute bg-gray-900 text-white w-[90%] left-5 -top-5 h-20 rounded-xl"
       >
-        <h1 class="text-3xl flex justify-center items-center h-full">
+        <h1 class="text-3xl flex justify-center items-center h-full font-semibold">
           Sign In
         </h1>
       </div>
-
-      <form class="absolute left-5 top-20 flex flex-col gap-5">
+      
+      <div class="w-full">
+      <form class="relative w-[90%] flex justify-center text-center left-5 top-30 flex-col gap-5 pt-[85px]">
+        <!-- Email -->
+         <div class="relative w-{340px}">
         <input
           type="email"
-          placeholder="Email"
-          class="w-[340px] border border-gray-300 rounded-md px-4 py-2"
+          class="peer border border-gray-300 w-full rounded-md px-4 py-2 outline-none focus:border-black"
         />
+        <label 
+          class="absolute left-3 top-2 text-gray-400 text-sm transition-all duration-100 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-black bg-white px-1">
+          Email
+        </label>
+        </div>
+
+        <!-- Password -->
+        <div class="relative w-{340px}">
         <input
           type="password"
-          placeholder="Password"
-          class="w-[340px] border border-gray-300 rounded-md px-4 py-2"
+          class="peer border border-gray-300 w-full rounded-md px-4 py-2 outline-none focus:border-black"
         />
-        <div class="flex gap-2">
-          <input type="checkbox" class="scale-125 accent-gray-900"/>
-          <p class="">Remember Me</p>
+        <label 
+          class="absolute left-3 top-2 text-gray-400 text-sm transition-all duration-100 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-black bg-white px-1">
+          Password
+        </label>
+        </div>
+
+        <div class="flex gap-2 items-center">
+          <div class="rounded-full px-3 py-2 active:bg-black/5">
+          <input type="checkbox" 
+           class="scale-125 accent-gray-900 cursor-pointer"/>
+          </div>
+          <p class="text-gray-500">Remember Me</p>
         </div>
 
         <button class="bg-gray-900 text-white uppercase text-sm p-2 rounded-lg font-bold hover:shadow-lg">sign in</button>
 
-        <p class="text-center text-gray-500 text-sm">Don't have an account? <span class="font-bold text-gray-900">Sign up</span> </p>
+        <p class="text-center text-gray-500 text-sm">Don't have an account? 
+          <span class="font-bold text-gray-900 hover:underline">Sign up</span> 
+        </p>
       </form>
     </div>
   </body>
