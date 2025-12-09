@@ -85,28 +85,32 @@ console.log(addNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11));
 
 const greet = function(name, timeOfDay) {
     if(
-        timeOfDay === 'morning' || 
-        'morning'.toUpperCase()
-    ){
+        typeof(timeOfDay) === 'string'
+        ? (timeOfDay.toLowerCase() === 'morning')
+        : (timeOfDay <= 11 && timeOfDay >= 0)
+    )
+    {
         return `Good morning, ${name}!`;
     }
     else if (
-        timeOfDay === 'afternoon' || 
-        'morning'.toUpperCase()
+        typeof(timeOfDay) === 'string'
+        ? (timeOfDay.toLowerCase() === 'afternoon')
+        : (timeOfDay >= 12 && timeOfDay <= 15)
     ) {
         return `Good afternoon, ${name}!`;
     }
     else if(
-        timeOfDay === 'evening' || 
-        'morning'.toUpperCase()
-    ) { 
+        typeof(timeOfDay) === 'string' 
+        ? (timeOfDay.toLowerCase() === 'evening') 
+        : (timeOfDay >= 16 && timeOfDay <= 24)
+     ) { 
         return `Good evening, ${name}!`;
     }
     else {
-        return 'invalid'
+        return 'invalid';
     }
 }
-console.log(greet('Alice', 'morning'));
+console.log(greet('Alice', 'evening'));
 
 function calcArea(l, b) {
     console.log(l*b)
