@@ -84,13 +84,22 @@ console.log(addNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11));
 // console.log(name);
 
 const greet = function(name, timeOfDay) {
-    if(timeOfDay === 'morning' || 'morning'.toUpperCase()){
+    if(
+        timeOfDay === 'morning' || 
+        'morning'.toUpperCase()
+    ){
         return `Good morning, ${name}!`;
     }
-    else if (timeOfDay === 'afternoon' || 'morning'.toUpperCase()) {
+    else if (
+        timeOfDay === 'afternoon' || 
+        'morning'.toUpperCase()
+    ) {
         return `Good afternoon, ${name}!`;
     }
-    else if(timeOfDay === 'evening' || 'morning'.toUpperCase()) { 
+    else if(
+        timeOfDay === 'evening' || 
+        'morning'.toUpperCase()
+    ) { 
         return `Good evening, ${name}!`;
     }
     else {
