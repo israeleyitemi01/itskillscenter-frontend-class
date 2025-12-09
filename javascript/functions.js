@@ -31,10 +31,84 @@ console.log(modulus(80, 3));
 // }
 // greetUser("Israel");
 
-let userName = prompt("Please enter your name:");
-function greetUser(name) {
-      alert(`Hello ${name}, Welcome to our website!`);
+// let userName = prompt("Please enter your name:");
+// function greetUser(name) {
+//       alert(`Hello ${name}, Welcome to our website!`);
+// }
+// greetUser(userName);  
+
+// function welcomeUser(name) {
+//     alert("welcome, " + name);
+// }
+// welcomeUser('Israel Eyitemi');
+
+// 3. Arrow Function
+
+// const subtractNumbers = (a, b) => a - b
+// console.log(subtractNumbers(10, 5));
+
+// setTimeout(function() {
+//     alert("I am an anonymous function! called after 5 seconds.")
+// }, 5000);
+
+// NOTE: setTimeout is an example of a higher order function
+
+// (function() {
+//     alert("This is an immediately invoked function!");
+// })();
+
+// function operate(a, b, operation) {
+//     return operation(a, b);
+// }
+// const result = operate(10, 5, (x, y) => x * y);
+// console.log(result);
+
+// NOTE: operate is also a higher function
+
+// Rest Parameters
+function addNum(a, b, ...numbers) {
+    return a + b + numbers.reduce((acc, val) => acc + val, 0);
 }
-greetUser(userName);  
+console.log(addNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11));
 
+// Global Scope
+// let geeting = "Hi";
+// function displayGreeting() {
+//     console.log(greeting);
+// }
+// displayGreeting();
 
+// function greet(name){
+//     alert(`${Welcome} + greet(name)`);
+// }
+// console.log(name);
+
+const greet = function(name, timeOfDay) {
+    if(timeOfDay === 'morning' || 'morning'.toUpperCase()){
+        return `Good morning, ${name}!`;
+    }
+    else if (timeOfDay === 'afternoon' || 'morning'.toUpperCase()) {
+        return `Good afternoon, ${name}!`;
+    }
+    else if(timeOfDay === 'evening' || 'morning'.toUpperCase()) { 
+        return `Good evening, ${name}!`;
+    }
+    else {
+        return 'invalid'
+    }
+}
+console.log(greet('Alice', 'morning'));
+
+function calcArea(l, b) {
+    console.log(l*b)
+}
+calcArea(4,5)
+
+function number(num) {
+    if(num %2 === 0) {
+        console.log(`${num} is even`)
+    }else console.log(`${num} is oddd`)
+}
+
+number(4)
+number(7)

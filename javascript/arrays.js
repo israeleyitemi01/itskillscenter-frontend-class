@@ -1,8 +1,8 @@
 // Array Literal
-let fruit = "Apple"
-let fruits = ["Banana", "Orange", " Mango", fruit, "Pineapple"];
-console.log(fruits);
-fruits[2] = "kiwi";
+// let fruit = "Apple"
+// let fruits = ["Banana", "Orange", " Mango", fruit, "Pineapple"];
+// console.log(fruits);
+// fruits[2] = "kiwi";
 
 // Modifying Array Element
 console.log(fruits);
@@ -80,5 +80,10 @@ itSkillsStudents.forEach(i => {
 //     console.log(i + 1 + '. ' + fruits[i]);
 // }
 
-
+let fruit = "Apple"
+let fruits = ["Banana", "Orange", " Mango", fruit, "Pineapple"];
+console.log(fruits);
+fruits[2] = "kiwi";
+fruits.map((fruit, index) => console.log(fruit))
+console.log(index + 1 + ". " + fruit);
 
