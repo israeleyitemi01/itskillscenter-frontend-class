@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+}
+#button {
+    margin: 20px;
+    margin-bottom: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 60%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
