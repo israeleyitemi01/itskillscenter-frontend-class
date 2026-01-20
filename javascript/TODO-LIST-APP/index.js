@@ -58,3 +58,13 @@ addBtn.addEventListener("click",addTask);
 cancelBtn.addEventListener("click",() => {
     msg.style.display = "none";
 });
+
+
+
+function isEven(num) {
+  return num % 2 === 0; // Incorrect logic
+}
+
+console.log(isEven(4)); // Outputs false instead of true
+
+
