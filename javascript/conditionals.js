@@ -19,7 +19,7 @@
 //     alert("Invalid Amount");
 // } 
 
-// else if (customerPay === 1000000) {
+//   else if (customerPay === 1000000) {
 //     alert("We have Pixie Curls at ₦" + customerPay);
 // }
 // else if (customerPay === 800000) {
@@ -64,29 +64,29 @@
 
     // Class Work
 
-//    let customerPay = Number(prompt("What is your shopping total?", "0"));
-//    let discount = 0;
-//    let shippingFee = 0;
-//    if (isNaN(customerPay)) {
-//     alert("enter a valid number")
-//    }
-// //    Apply Discount
-//    if (customerPay > 100) {
-//     discount = 0.20;
-//    } else if (customerPay > 50 && customerPay <= 100) {
-//     discount = 0.10;
-//    } else {
-//     discount = 0;
-//    }
+   let customerPay = Number(prompt("What is your shopping total?", "0"));
+   let discount = 0;
+   let shippingFee = 0;
+   if (isNaN(customerPay)) {
+    alert("enter a valid number")
+   }
+//    Apply Discount
+   if (customerPay > 100) {
+    discount = 0.20;
+   } else if (customerPay > 50 && customerPay <= 100) {
+    discount = 0.10;
+   } else {
+    discount = 0;
+   }
 
-//    let actualDiscount = customerPay * discount;
-//    let totalAfterDiscount = customerPay - actualDiscount;
-// // Shipping fee rule
-//    if (totalAfterDiscount < 75) {
-//     shippingFee = 5;
-//    }
-//    let finalTotal = totalAfterDiscount + shippingFee;
-//    console.log("Original Total Amount: $" + customerPay);
-//    console.log("Discount Applied: $" + discount*100);
-//    console.log("Shipping Fee: $" + shippingFee);
-//    console.log("Final Total: $" + finalTotal);
+   let actualDiscount = customerPay * discount;
+   let totalAfterDiscount = customerPay - actualDiscount;
+// Shipping fee rule
+   if (totalAfterDiscount < 75) {
+    shippingFee = 5;
+   }
+   let finalTotal = totalAfterDiscount + shippingFee;
+   console.log("Original Total Amount: $" + customerPay);
+   console.log("Discount Applied: $" + discount*100);
+   console.log("Shipping Fee: $" + shippingFee);
+   console.log("Final Total: $" + finalTotal);

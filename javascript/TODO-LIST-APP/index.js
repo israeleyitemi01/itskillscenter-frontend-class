@@ -59,12 +59,11 @@ cancelBtn.addEventListener("click",() => {
     msg.style.display = "none";
 });
 
-
-
-function isEven(num) {
-  return num % 2 === 0; // Incorrect logic
+// PART 6: LOCAL STORAGE
+function saveData() {
+    localStorage.setItem("tasks", taskList.innerHTML);
 }
 
-console.log(isEven(4)); // Outputs false instead of true
-
-
+function showTask() {
+    taskList.innerHTML = localStorage.getItem("tasks");
+}

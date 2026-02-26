@@ -20,13 +20,13 @@
 // let result = z + m;
 // console.log(result);
 
-// let accBal = 1000;
-// let firstName = "Israel";
-// let lastName = "Eyitemi";
-// // let message = "Welcome " + firstName + " "lastName + "". Your account balance as of " + "is ₦" + accBal;
+let accBal = 1000;
+let firstName = "Israel";
+let lastName = "Eyitemi";
+// // let message = ("Welcome " + firstName + " " + lastName +"." + " " + "Your account balance as of" + " " + Date() + " " + "is" + " " + accBal +".")
 // // console.log(message);
-// let message = `Welcome ${firstName} ${lastName}. Your account balance as of ${new Date()} is ₦${accBal}.`;
-// console.log(message);
+let message = `Welcome ${firstName} ${lastName}. Your account balance as of ${new Date()} is ₦${accBal}.`;
+console.log(message);
 
 // let myInfo = { firstName: "Callistus", lastName: "Anwara", age: 75, wives: {
 //     firstWife: "Amanda",

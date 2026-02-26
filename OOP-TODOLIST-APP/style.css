@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 65%);
+}
+
+/* App container */
+#app-container {
+  margin: 20px auto;
+  width: 35%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Error message */
+#msg {
+  background-color: rgb(233, 83, 83);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.fa-times {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Inputs */
+#input-field {
+  padding: 10px;
+  width: 70%;
+}
+
+button {
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(200, 100%, 50%);
+    padding: 10px;;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(200, 100%, 70%);
+}
+
+/* Tasks */
+#tasks-area {
+  background-color: hsl(0, 0%, 90%);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Completed task */
+.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Icons */
+.fa-trash-o {
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.fa-check {
+  color: green;
+  cursor: pointer;
+}

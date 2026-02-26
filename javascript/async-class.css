@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-card {
+    color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    background: lightgrey;
+}
+
+.blog-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: black;
+}
+
+.blog-card p {
+    color: rgba(0, 0, 0, 0.689);
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    width: 40%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: rgb(150, 10, 10);
+}
